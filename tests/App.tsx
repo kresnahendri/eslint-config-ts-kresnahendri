@@ -1,4 +1,5 @@
-import React from "react";
+import * as fs from "fs";
+import React, { useState as _useState } from "react";
 
 const white = "#fff";
 
@@ -15,10 +16,16 @@ const styles: styles = {
   },
 };
 
-const App = () => (
-  <div style={styles.container}>
-    <h1>Hola, I'm formatted by ESLint</h1>
-  </div>
-);
+const anObject = { name: "John" };
+console.log(anObject);
+const _expectedIsNotUsed = { name: "John" };
+
+const App = function () {
+  return (
+    <div style={styles.container}>
+      <h1>Hola, I&lsquo;m formatted by ESLint</h1>
+    </div>
+  );
+};
 
 export default App;

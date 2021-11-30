@@ -21,12 +21,6 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/indent": 0,
-    // "@typescript-eslint/interface-name-prefix": [
-    //   "error",
-    //   {
-    //     prefixWithI: "always",
-    //   },
-    // ],
     "@typescript-eslint/quotes": ["error", "double"],
     "arrow-body-style": 0,
     "import/extensions": 0,
@@ -46,9 +40,7 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     ],
-    "simple-import-sort/sort": "error",
     semi: "error",
-    // "object-curly-spacing": ["error", "never", {arraysInObjects: true}],
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/ban-ts-ignore": "off",
     "global-require": "off",
@@ -60,8 +52,9 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off",
     "react-hooks/exhaustive-deps": "off",
     "@typescript-eslint/no-empty-function": "off",
-    'unused-imports/no-unused-vars': [
-      'error',
+    // "object-curly-spacing": ["error", "never", {arraysInObjects: true}],
+    "@typescript-eslint/no-unused-vars": [
+      'warn',
       {
         vars: 'all',
         varsIgnorePattern: '^_',
