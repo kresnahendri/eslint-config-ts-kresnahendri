@@ -3,6 +3,8 @@ import React, { useState as _useState } from "react";
 
 const white = "#fff";
 
+console.log(fs);
+
 type styles = {
   container: React.CSSProperties;
 };

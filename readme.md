@@ -2,20 +2,27 @@
 
 ## Usage
 
+### .eslintrc
+
 ```json
-// .eslintrc
 {
   "root": true,
   "extends": "ts-kresnahendri",
+  "rules": {
+    "semi": ["error", "never"],
+    "react/react-in-jsx-scope": "off"
+  }
 }
 ```
 
+### .prettierrc
+
 ```json
-// .prettierrc
 {
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "singleQuote": false,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "semi": false
 }
 ```
