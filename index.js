@@ -62,5 +62,10 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-param-reassign": "off",
+    "react/no-unstable-nested-components": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/require-default-props": "off",
   },
 };
