@@ -1,12 +1,12 @@
 import * as fs from "fs"
-import { parse } from "json5"
+import { parse as _parse } from "json5"
 import React, {
   useState as _useState,
-  useCallback,
-  useDebugValue,
-  useEffect,
+  useCallback as _useCallback,
+  useDebugValue as _useDebugValue,
+  useEffect as _useEffect,
 } from "react"
-import { Operator, Comparator } from "semver"
+import { Operator as _O, Comparator as _C } from "semver"
 
 const white = "#fff"
 
