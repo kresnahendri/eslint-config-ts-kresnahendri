@@ -8,7 +8,13 @@ module.exports = {
     "@react-native-community",
   ],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "prettier", "react", "simple-import-sort"],
+  plugins: [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    // "simple-import-sort",
+    "jest",
+  ],
   settings: {
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"],
@@ -40,7 +46,6 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     ],
-    semi: "error",
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/ban-ts-ignore": "off",
     "global-require": "off",
@@ -52,14 +57,13 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off",
     "react-hooks/exhaustive-deps": "off",
     "@typescript-eslint/no-empty-function": "off",
-    // "object-curly-spacing": ["error", "never", {arraysInObjects: true}],
     "@typescript-eslint/no-unused-vars": [
-      'warn',
+      "warn",
       {
-        vars: 'all',
-        varsIgnorePattern: '^_',
-        args: 'after-used',
-        argsIgnorePattern: '^_',
+        vars: "all",
+        varsIgnorePattern: "^_",
+        args: "after-used",
+        argsIgnorePattern: "^_",
       },
     ],
     "jsx-a11y/anchor-is-valid": "off",
@@ -67,5 +71,31 @@ module.exports = {
     "react/no-unstable-nested-components": "off",
     "import/no-extraneous-dependencies": "off",
     "react/require-default-props": "off",
+    semi: ["error", "never"],
+    "react/react-in-jsx-scope": "off",
+    "import/no-named-as-default": "off",
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
+    "react/function-component-definition": "off",
+    "dot-notation": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "newlines-between": "never",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
   },
 };
